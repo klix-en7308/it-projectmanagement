@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div id="first" class="panel">
+        <header>
+        <h1>PROJECT MANAGEMENT</h1>
+        <div class="row no-gutters">
+          <div class="col-auto">
+            <img src="https://media.tenor.com/F42cQJm_Py0AAAAi/meme-cat.gif">
+          </div>
+          <div class="col text-end">
+            <h2>KATHLEEN EVANGELISTA R.T & NADYA LEVINA L.</h2>
+            <p>
+              Information Systems Project Management is the activity of organizing the information needed to develop an information systems project.
+            </p>
+          </div>
+        </div>
+        </header>
+      </div>
+      <div id="second" class="panel">
+        <div class="row no-gutters">
+          <div class="col text-end">
+            <a href="sixsigmas.html">SIX SIGMAS,</a>
+          </div>
+          <div class="col-auto">
+            ,
+            <i class="fas fa-comma"></i>
+          </div>
+          <div class="col">
+            <a href="kanban.html">KANBAN</a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <h1>AGUSTUS 2026</h1>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+let panels = gsap.utils.toArray(".panel");
+// we'll create a ScrollTrigger for each panel just to track when each panel's top hits the top of the viewport (we only need this for snapping)
+let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
+
+panels.forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
+    pin: true, 
+    pinSpacing: false 
+  });
+});
+      //  gsap.registerPlugin(ScrollTrigger);
+      // let panels = gsap.utils.toArray(".panel");
+      // panels.forEach((panel, i) => {
+      //   ScrollTrigger.create({
+      //     trigger: panel,
+      //     start: "top top", 
+      //     pin: i === panels.length - 1 ? false : true, 
+      //     pinSpacing: false 
+      //   });
+      // });
+    </script>
+  </body>
+</html>

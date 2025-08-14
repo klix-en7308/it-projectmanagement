@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Passion+One:wght@400;700;900&display=swap');
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+body{
+    background-color: black;
+    margin: 0;
+    overflow-x:hidden;
+    height: 100%;
+}
+h1{
+    color: greenyellow;
+    font-family: "Anton";
+}
+h2{
+    color: #B6CF9D;
+    font-family: "Anton";
+}
+p{
+    color: white;
+}
+a{
+    font-family: "Anton";
+    color: greenyellow;
+    text-decoration: none;
+}
+i{
+    color: #B6CF9D;
+    font-size: 50px;
+}
+#first, #second, #front, #characteristics, #example, #adv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#first h1{
+    font-size: 120px;
+}
+#first h2{
+    margin-top: -20px;
+    font-size: 20px;
+}
+#first p{
+    font-size: 18px;
+    margin-top: -5px;
+    line-height: 1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#first .col{
+    text-align: right;
+}
+#first img{
+    height: 100px;
+
+}
+#second a{
+    font-size: 130px;
+    color: greenyellow;
+    transition: 0.5s;
+}
+#second a:hover{
+    letter-spacing: 2px;
+    color: #B6CF9D;
+}
+#second .row{
+    width: 100%
+}
+.panel{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+#front, #characteristics, #example, #adv{
+     background-color: black;
+     padding-top: 70px;
+     padding-bottom: 70px;
+}
+#front h1{
+    font-size: 120px;
+}
+#front p{
+    font-size: 17px;
+}
+#front a{
+    color: #B6CF9D;
+    text-decoration: none;
+    font-size: 40px;
+    transition: 0.5s;
+}
+#front a:hover{
+    letter-spacing: 1px;
+}
+#front .col-auto, #characteristics .col-md{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#front .row{
+    width: 80%;
+}
+#front img{
+    height: 200px;
+}
+.carousel{
+    width: 90%;
+}
+.carousel-inner .row{
+    width: 80%;
+    margin: auto;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    color: greenyellow
+}
+#characteristics button i{
+    color: greenyellow;
+}
+#characteristics .card{
+    background-color: #0f0f0f;
+    padding: 20px;
+    width: 100%;
+}
+#characteristics .cardimg1{
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+}
+#characteristics .card h1{
+    font-size: 50px;
+}
+#characteristics .card p{
+    font-size: 20px;
+}
+#example p{
+    background-color: greenyellow;
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+}
+#example .row{
+    width: 80%;
+}
+#example h1{
+    color: #B6CF9D;
+    font-size: 80px;
+}
+#example p{
+    font-size: 17px;
+    line-height: 1.2;
+}
+#adv .row{
+    width: 80%;
+}
+#adv .card{
+    padding: 20px;
+    border-radius: 15px;
+    background: none;
+    border: 2px solid greenyellow;
+    height: 100%;
+}
+#adv .card li{
+    color: #B6CF9D;
+    font-size: 20px;
+}
+#example .cardimg2{
+    min-height: 200px;
+    height: 100%;
+    width: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+.top{
+    color: greenyellow;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
