@@ -85,15 +85,15 @@ i{
      height: calc(100vh - 100px);
 }
 #front h1{
-    font-size: 120px;
+    font-size: 10em;
 }
 #front p{
-    font-size: 17px;
+    font-size: 1.1em;
 }
 #front a{
     color: #B6CF9D;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 3em;
     transition: 0.5s;
 }
 #front a:hover{
@@ -137,14 +137,14 @@ i{
     border-radius: 100px;
 }
 #characteristics .card h1{
-    font-size: 50px;
+    font-size: 4em;
 }
 #characteristics .card p{
-    font-size: 20px;
+    font-size: 1.2em;
 }
 #example p{
     background-color: greenyellow;
-    padding: 20px;
+    padding: 1.2em;
     border-radius: 15px;
     color: black;
 }
@@ -153,10 +153,10 @@ i{
 }
 #example h1{
     color: #B6CF9D;
-    font-size: 80px;
+    font-size: 4em;
 }
 #example p{
-    font-size: 17px;
+    font-size: 1.2em;
     line-height: 1.2;
 }
 #adv .row{
@@ -171,7 +171,7 @@ i{
 }
 #adv .card li{
     color: #B6CF9D;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 #example .cardimg2{
     min-height: 200px;
