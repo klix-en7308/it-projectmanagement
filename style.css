@@ -82,7 +82,8 @@ i{
 }
 #front, #characteristics, #example, #adv{
      background-color: black;
-     height: calc(100vh - 100px);
+    padding-top: 10em;
+    padding-bottom: 10em;
 }
 #front h1{
     font-size: 10em;
